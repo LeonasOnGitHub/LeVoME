@@ -208,6 +208,28 @@ h3 {
     border-top: 1px solid var(--line);
 }
 
+
+.about-photo {
+  width: 100%;
+  max-width: 360px;
+  margin-left: auto;
+  padding: 0.55rem;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  box-shadow: 18px 18px 0 var(--accent-deep);
+}
+
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  filter: grayscale(15%);
+}
+
 .prose {
     color: var(--muted);
     font-size: 1.05rem;

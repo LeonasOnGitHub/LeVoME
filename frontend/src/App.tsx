@@ -1,4 +1,4 @@
-import {profile, projects} from "./data/portfolio";
+import { profile, projects } from "./data/portfolio";
 
 const skills = ['React', 'Angular', 'TypeScript', 'JavaScript', 'Node.js', 'Python', 'Java', 'SQL', 'Git & GitHub', 'Scala']
 
@@ -38,11 +38,19 @@ export default function App() {
           <div>
             <p className="eyebrow">Über mich</p>
             <h2>Technik mit Blick auf Menschen und Ergebnisse.</h2>
+            <div className="prose">
+              <p>Ich entwickle moderne Anwendungen mit besonderem Interesse an verständlichen Benutzeroberflächen, wartbarer Software und pragmatischen Lösungen.</p>
+              <p>Diese beiden Absätze sind für deinen persönlichen Werdegang gedacht: Ausbildung, Berufserfahrung, Quereinstieg oder Selbststudium. Ersetze sie, sobald du deine Geschichte festgelegt hast.</p>
+            </div>
           </div>
-          <div className="prose">
-            <p>Ich entwickle moderne Anwendungen mit besonderem Interesse an verständlichen Benutzeroberflächen, wartbarer Software und pragmatischen Lösungen.</p>
-            <p>Diese beiden Absätze sind für deinen persönlichen Werdegang gedacht: Ausbildung, Berufserfahrung, Quereinstieg oder Selbststudium. Ersetze sie, sobald du deine Geschichte festgelegt hast.</p>
+
+          <div className="about-photo">
+            <img
+              src="m1.jpeg"
+              alt="Porträt von Leonas Freiherr von Medem"
+            />
           </div>
+
         </section>
 
         <section className="section" id="projects">
