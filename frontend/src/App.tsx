@@ -75,16 +75,14 @@ export default function App() {
 
         <section className="section contact" id="contact">
           <p className="eyebrow">Kontakt</p>
-          <h2>Lass uns über dein nächstes Projekt sprechen.</h2>
-          <p>Ersetze die Kontaktdaten durch deine beruflichen Profile und eine E-Mail-Adresse.</p>
           <div className="contact-links">
-            <a href="mailto:hello@example.com">hello@example.com <ArrowIcon /></a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <ArrowIcon /></a>
-            <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <ArrowIcon /></a>
+            <a href="mailto:{profile.email}">{profile.email} <ArrowIcon /></a>
+            <a href="{profile.github}" target="_blank" rel="noreferrer">GitHub <ArrowIcon /></a>
+            <a href="{profile.linkedin}" target="_blank" rel="noreferrer">LinkedIn <ArrowIcon /></a>
           </div>
         </section>
       </main>
-      <footer><span>© 2026 [Dein Name]</span><span>Built with React & TypeScript</span></footer>
+      <footer><span>{profile.name}</span></footer>
     </>
   )
 }
