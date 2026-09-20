@@ -1,32 +1,6 @@
-type Project = {
-  title: string
-  description: string
-  stack: string[]
-  label: string
-}
+import {profile, projects} from "./data/portfolio";
 
-const projects: Project[] = [
-  {
-    title: 'Projekt Eins',
-    description: 'Eine kurze, ergebnisorientierte Beschreibung: Welches Problem löst das Projekt und was war dein Beitrag?',
-    stack: ['React', 'TypeScript', 'Node.js'],
-    label: 'Web-App',
-  },
-  {
-    title: 'Projekt Zwei',
-    description: 'Ersetze diesen Platzhalter mit einem echten Projekt und nenne die wichtigste technische Entscheidung.',
-    stack: ['Java', 'SQL', 'REST API'],
-    label: 'Backend',
-  },
-  {
-    title: 'Projekt Drei',
-    description: 'Zeige hier ein kleineres Projekt, das deine Lernbereitschaft oder Problemlösungskompetenz verdeutlicht.',
-    stack: ['Python', 'Git', 'Docker'],
-    label: 'Tooling',
-  },
-]
-
-const skills = ['React', 'TypeScript', 'JavaScript', 'Node.js', 'Python', 'Java', 'SQL', 'Git & GitHub']
+const skills = ['React', 'Angular', 'TypeScript', 'JavaScript', 'Node.js', 'Python', 'Java', 'SQL', 'Git & GitHub', 'Scala']
 
 function ArrowIcon() {
   return <span aria-hidden="true">↗</span>
@@ -48,9 +22,9 @@ export default function App() {
 
       <main id="content">
         <section className="hero section" id="home">
-          <p className="eyebrow reveal">Fullstack Developer · Software Engineer</p>
-          <h1 className="reveal">Ich entwickle digitale Lösungen, die klar funktionieren.</h1>
-          <p className="hero-copy reveal">Hallo, ich bin <strong>[Dein Name]</strong>. Ich verbinde durchdachtes Frontend mit solider Backend-Logik und setze Ideen in zuverlässige Software um.</p>
+          <p className="eyebrow reveal">{profile.role}</p>
+          <h1 className="reveal">Hi, ich bin Leonas</h1>
+          <p className="hero-copy reveal">{profile.intro}</p>
           <div className="actions reveal">
             <a className="button button-primary" href="#projects">Projekte ansehen <ArrowIcon /></a>
             <a className="button button-ghost" href="#contact">Kontakt aufnehmen</a>
@@ -79,7 +53,7 @@ export default function App() {
           <div className="project-grid">
             {projects.map((project, index) => (
               <article className="project-card" key={project.title}>
-                <div className={`project-visual visual-${index + 1}`} aria-hidden="true"><span>{project.label}</span></div>
+                <div className={`project-visual visual-${index + 1}`} aria-hidden="true"><span>{project.category}</span></div>
                 <div className="project-content">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>

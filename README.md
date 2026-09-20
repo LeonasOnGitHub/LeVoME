@@ -1,2 +1,2 @@
 # LeVoME
-Meine eigene Webseite 
+Webseite von Leonas von Medem 
