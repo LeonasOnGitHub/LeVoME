@@ -1,6 +1,7 @@
-import { profile, projects } from "./data/portfolio";
+import { profile, projects, skills } from "./data/portfolio";
+import {useState} from "react";
 
-const skills = ['React', 'Angular', 'TypeScript', 'JavaScript', 'Node.js', 'Python', 'Java', 'SQL', 'Git & GitHub', 'Scala']
+
 
 function ArrowIcon() {
   return <span aria-hidden="true">↗</span>

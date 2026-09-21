@@ -44,3 +44,5 @@ export const projects = [
     stack: ['Scala', 'MongoDB', 'React'],
   },
 ]
+
+export const skills = ['React', 'Angular', 'TypeScript', 'JavaScript', 'Node.js', 'Python', 'Java', 'SQL', 'Git & GitHub', 'Scala']
