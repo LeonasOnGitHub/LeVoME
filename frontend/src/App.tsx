@@ -96,22 +96,51 @@ export default function App() {
           </div>
 
           {selectedProject && (
-            <div
-              className="project-details"
-              id="project-details"
-              aria-live="polite"
-            >
-              <div>
-                <p className="eyebrow">{selectedProject.category}</p>
-                <h3>{selectedProject.title}</h3>
-                <p>{selectedProject.description}</p>
+            <div className="project-details-content">
+              <p className="eyebrow">{selectedProject.category}</p>
+              <h3>{selectedProject.title}</h3>
 
-                <ul className="tags" aria-label="Verwendete Technologien">
-                  {selectedProject.stack.map((technology) => (
-                    <li key={technology}>{technology}</li>
-                  ))}
-                </ul>
+              <div className="details-grid">
+                <section>
+                  <h4>01 — Ausgangsproblem</h4>
+                  <p>{selectedProject.details.problem}</p>
+                </section>
+
+                <section>
+                  <h4>02 — Mein konkreter Beitrag</h4>
+                  <p>{selectedProject.details.contribution}</p>
+                </section>
+
+                <section>
+                  <h4>03 — Technische Umsetzung</h4>
+                  <p>{selectedProject.details.implementation}</p>
+                </section>
+
+                <section>
+                  <h4>04 — Ergebnis &amp; Learnings</h4>
+                  <p>{selectedProject.details.outcome}</p>
+                </section>
               </div>
+
+              {(selectedProject.details.liveUrl ||
+                selectedProject.details.githubUrl ||
+                selectedProject.details.screenshots?.length) && (
+                  <section className="project-resources">
+                    <h4>05 — Projekt ansehen</h4>
+
+                    {selectedProject.details.liveUrl && (
+                      <a href={selectedProject.details.liveUrl} target="_blank" rel="noreferrer">
+                        Live-Demo <ArrowIcon />
+                      </a>
+                    )}
+
+                    {selectedProject.details.githubUrl && (
+                      <a href={selectedProject.details.githubUrl} target="_blank" rel="noreferrer">
+                        GitHub <ArrowIcon />
+                      </a>
+                    )}
+                  </section>
+                )}
 
               <button
                 type="button"
