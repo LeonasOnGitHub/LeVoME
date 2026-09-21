@@ -258,6 +258,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    
 }
 
 .project-card {
@@ -287,6 +288,54 @@ h3 {
     transform: rotate(28deg) translate(30%, 14%);
     border: 1px solid rgba(255, 255, 255, .28);
     background: linear-gradient(130deg, rgba(116, 224, 207, .35), transparent);
+}
+
+.project-links button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.project-links button:hover {
+  color: var(--accent);
+}
+
+.project-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+}
+
+.project-details h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-details p:not(.eyebrow) {
+  max-width: 680px;
+  color: var(--muted);
+}
+
+.details-close {
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: 500 0.78rem 'DM Mono', monospace;
+  cursor: pointer;
+}
+
+.details-close:hover {
+  color: var(--accent);
 }
 
 .visual-2 {

@@ -21,6 +21,11 @@ export const projects = [
     description:
       'Eine Anwendung mit täglichen Challenges, Nutzerverwaltung, Sicherheitsfunktionen und Leaderboards.',
     stack: ['Java', 'Spring Boot', 'React', 'JavaScript', 'PostgreSQL'],
+    details: [
+      'Implementierung von REST APIs für die Verwaltung von Challenges und Nutzerprofilen.',
+      'Integration von Sicherheitsfunktionen wie Authentifizierung und Autorisierung.',
+      'Entwicklung eines Leaderboards zur Anzeige der besten Nutzerleistungen.',
+    ],
   },
   {
     title: 'Rechnungspositionsbearbeitungstool',
@@ -28,6 +33,11 @@ export const projects = [
     description:
       'Ein Tool zur positionsgenauen Korrektur von Rechnungen, angebunden an Backend-APIs.',
     stack: ['Angular', 'TypeScript', 'REST APIs'],
+    details: [
+      'Entwicklung einer benutzerfreundlichen Oberfläche zur Bearbeitung von Rechnungspositionen.',
+      'Integration von Backend-APIs zur Datenverarbeitung und -speicherung.',
+      'Implementierung von Validierungsmechanismen zur Sicherstellung der Datenintegrität.',
+    ],
   },
   {
     title: 'Online Comic Book Shop',
@@ -35,6 +45,11 @@ export const projects = [
     description:
       'Ein Online-Shop für Comics mit einer Microservice-Architektur und asynchroner Kommunikation.',
     stack: ['Java', 'Spring Boot', 'React', 'RabbitMQ', 'Docker'],
+    details: [
+      'Entwicklung von Microservices für Produktverwaltung, Bestellabwicklung und Nutzerverwaltung.',
+      'Implementierung von asynchroner Kommunikation zwischen den Microservices mittels RabbitMQ.',
+      'Bereitstellung der Anwendung in Docker-Containern für eine einfache Skalierbarkeit.',
+    ],
   },
   {
     title: 'News Analyse Tool',
@@ -42,6 +57,11 @@ export const projects = [
     description:
       'Analysiert Newsartikel automatisch und ordnet Berichterstattung als positiv, negativ oder neutral ein.',
     stack: ['Scala', 'MongoDB', 'React'],
+    details: [
+      'Entwicklung eines Tools zur automatischen Analyse von Newsartikeln.',
+      'Implementierung von Algorithmen zur Sentiment-Analyse und Kategorisierung der Berichterstattung.',
+      'Visualisierung der Analyseergebnisse in einer benutzerfreundlichen Oberfläche.',
+    ],
   },
 ]
 

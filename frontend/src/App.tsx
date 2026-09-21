@@ -1,5 +1,5 @@
 import { profile, projects, skills } from "./data/portfolio";
-import {useState} from "react";
+import { useState } from "react";
 
 
 
@@ -8,6 +8,11 @@ function ArrowIcon() {
 }
 
 export default function App() {
+  const [openProject, setOpenProject] = useState<string | null>(null);
+  const selectedProject = projects.find(
+    (project) => project.title === openProject,
+  )
+
   return (
     <>
       <a className="skip-link" href="#content">Zum Inhalt springen</a>
@@ -60,20 +65,63 @@ export default function App() {
             <p>Jede Karte erklärt kurz den Nutzen, die Umsetzung und die verwendeten Technologien.</p>
           </div>
           <div className="project-grid">
-            {projects.map((project, index) => (
-              <article className="project-card" key={project.title}>
-                <div className={`project-visual visual-${index + 1}`} aria-hidden="true"><span>{project.category}</span></div>
-                <div className="project-content">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <ul className="tags" aria-label={`Technologien für ${project.title}`}>
-                    {project.stack.map((item) => <li key={item}>{item}</li>)}
-                  </ul>
-                  <div className="project-links"><a href="#contact">GitHub <ArrowIcon /></a><a href="#contact">Details <ArrowIcon /></a></div>
-                </div>
-              </article>
-            ))}
+            {projects.map((project, index) => {
+              const isOpen = openProject === project.title
+
+              return (
+                <article className="project-card" key={project.title}>
+                  <div className={`project-visual visual-${index + 1}`} aria-hidden="true"><span>{project.category}</span></div>
+                  <div className="project-content">
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    <ul className="tags" aria-label={`Technologien für ${project.title}`}>
+                      {project.stack.map((item) => <li key={item}>{item}</li>)}
+                    </ul>
+                    <div className="project-links">
+                      <a href="#contact">GitHub <ArrowIcon /></a>
+
+                      <button
+                        type="button"
+                        onClick={() => setOpenProject(isOpen ? null : project.title)}
+                        aria-expanded={isOpen}
+                        aria-controls="project-details"
+                      >
+                        {isOpen ? 'Details schließen' : 'Details'} <ArrowIcon />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              )
+            })}
           </div>
+
+          {selectedProject && (
+            <div
+              className="project-details"
+              id="project-details"
+              aria-live="polite"
+            >
+              <div>
+                <p className="eyebrow">{selectedProject.category}</p>
+                <h3>{selectedProject.title}</h3>
+                <p>{selectedProject.description}</p>
+
+                <ul className="tags" aria-label="Verwendete Technologien">
+                  {selectedProject.stack.map((technology) => (
+                    <li key={technology}>{technology}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <button
+                type="button"
+                className="details-close"
+                onClick={() => setOpenProject(null)}
+              >
+                Details schließen
+              </button>
+            </div>
+          )}
         </section>
 
         <section className="section skills-section" id="skills">
