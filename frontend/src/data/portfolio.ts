@@ -21,7 +21,7 @@ export const projects = [
         description:
             'Eine Anwendung mit täglichen Challenges, Nutzerverwaltung, Sicherheitsfunktionen und Leaderboards.',
         stack: ['Java', 'Spring Boot', 'React', 'JavaScript', 'PostgreSQL'],
-         details: {
+        details: {
             problem:
                 'Nutzer sollen jeden Tag neue Challenges erhalten und ihren Fortschritt mit anderen vergleichen können.',
             contribution:
@@ -30,6 +30,10 @@ export const projects = [
                 'Das Backend basiert auf Java und Spring Boot. Das React-Frontend kommuniziert über APIs mit dem Backend; PostgreSQL speichert Nutzer-, Challenge- und Fortschrittsdaten.',
             outcome:
                 'Ich habe gelernt, eine Fullstack-Anwendung mit Authentifizierung, persistenter Datenhaltung und einer klaren Trennung von Frontend und Backend umzusetzen.',
+            liveUrl:
+                'https://daily-challenge-app.example.com',
+            githubUrl:
+                'https://github.com/LeonasOnGitHub/daylenge'
         },
     },
     {
@@ -47,6 +51,7 @@ export const projects = [
                 'Das Backend basiert auf Java und Spring Boot. Das React-Frontend kommuniziert über APIs mit dem Backend; PostgreSQL speichert Nutzer-, Challenge- und Fortschrittsdaten.',
             outcome:
                 'Ich habe gelernt, eine Fullstack-Anwendung mit Authentifizierung, persistenter Datenhaltung und einer klaren Trennung von Frontend und Backend umzusetzen.',
+
         },
     },
     {
@@ -55,7 +60,7 @@ export const projects = [
         description:
             'Ein Online-Shop für Comics mit einer Microservice-Architektur und asynchroner Kommunikation.',
         stack: ['Java', 'Spring Boot', 'React', 'RabbitMQ', 'Docker'],
-         details: {
+        details: {
             problem:
                 'Nutzer sollen jeden Tag neue Challenges erhalten und ihren Fortschritt mit anderen vergleichen können.',
             contribution:
@@ -81,6 +86,13 @@ export const projects = [
                 'Das Backend basiert auf Java und Spring Boot. Das React-Frontend kommuniziert über APIs mit dem Backend; PostgreSQL speichert Nutzer-, Challenge- und Fortschrittsdaten.',
             outcome:
                 'Ich habe gelernt, eine Fullstack-Anwendung mit Authentifizierung, persistenter Datenhaltung und einer klaren Trennung von Frontend und Backend umzusetzen.',
+            githubUrl:
+                'https://github.com/NewsAnalyseTool',
+            screenshots: [
+                'NewsAnalyse.png',
+                'NewsAnalyse.png',
+                'NewsAnalyse.png',
+            ],
         },
     },
 ]

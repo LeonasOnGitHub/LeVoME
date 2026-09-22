@@ -1,5 +1,5 @@
 import { profile, projects, skills } from "./data/portfolio";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 
@@ -12,6 +12,14 @@ export default function App() {
   const selectedProject = projects.find(
     (project) => project.title === openProject,
   )
+  useEffect(() => {
+    if (openProject) {
+      document.getElementById('project-details')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    }
+  }, [openProject])
 
   return (
     <>
@@ -102,22 +110,22 @@ export default function App() {
 
               <div className="details-grid">
                 <section>
-                  <h4>01 — Ausgangsproblem</h4>
+                  <h4>Ausgangsproblem</h4>
                   <p>{selectedProject.details.problem}</p>
                 </section>
 
                 <section>
-                  <h4>02 — Mein konkreter Beitrag</h4>
+                  <h4>Mein konkreter Beitrag</h4>
                   <p>{selectedProject.details.contribution}</p>
                 </section>
 
                 <section>
-                  <h4>03 — Technische Umsetzung</h4>
+                  <h4>Technische Umsetzung</h4>
                   <p>{selectedProject.details.implementation}</p>
                 </section>
 
                 <section>
-                  <h4>04 — Ergebnis &amp; Learnings</h4>
+                  <h4>Ergebnis &amp; Learnings</h4>
                   <p>{selectedProject.details.outcome}</p>
                 </section>
               </div>
@@ -126,7 +134,7 @@ export default function App() {
                 selectedProject.details.githubUrl ||
                 selectedProject.details.screenshots?.length) && (
                   <section className="project-resources">
-                    <h4>05 — Projekt ansehen</h4>
+                    <h4>Projekt ansehen</h4>
 
                     {selectedProject.details.liveUrl && (
                       <a href={selectedProject.details.liveUrl} target="_blank" rel="noreferrer">
