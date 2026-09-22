@@ -104,7 +104,8 @@ export default function App() {
           </div>
 
           {selectedProject && (
-            <div className="project-details-content">
+            <div className="project-details-content"
+              id="project-details">
               <p className="eyebrow">{selectedProject.category}</p>
               <h3>{selectedProject.title}</h3>
 

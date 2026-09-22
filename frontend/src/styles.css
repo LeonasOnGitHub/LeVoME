@@ -317,6 +317,7 @@ h3 {
 .project-details-content {
     flex: 1;
     margin-top: 2.5rem;
+    scroll-margin-top: 6.5rem;
 }
 
 .details-grid {
