@@ -365,6 +365,40 @@ h3 {
     color: var(--accent);
 }
 
+.screenshot-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 860px;
+    margin-top: 1rem;
+}
+
+.screenshot-gallery figure {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--surface-2);
+}
+
+.screenshot-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+.screenshot-gallery figure:hover img {
+    transform: scale(1.03);
+}
+
+.resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
 .visual-2 {
     background: linear-gradient(135deg, #262341, #15313a);
 }
@@ -504,6 +538,10 @@ footer {
 }
 
 @media(max-width:760px) {
+    .screenshot-gallery {
+        grid-template-columns: 1fr;
+    }
+
     .details-grid {
         grid-template-columns: 1fr;
     }

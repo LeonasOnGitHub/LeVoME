@@ -135,19 +135,35 @@ export default function App() {
                 selectedProject.details.githubUrl ||
                 selectedProject.details.screenshots?.length) && (
                   <section className="project-resources">
-                    <h4>Projekt ansehen</h4>
+                    <h4>05 — Projekt ansehen</h4>
 
-                    {selectedProject.details.liveUrl && (
-                      <a href={selectedProject.details.liveUrl} target="_blank" rel="noreferrer">
-                        Live-Demo <ArrowIcon />
-                      </a>
+                    {selectedProject.details.screenshots?.length && (
+                      <div className="screenshot-gallery">
+                        {selectedProject.details.screenshots.map((screenshot) => (
+                          <figure key={screenshot.src}>
+                            <img
+                              src={screenshot.src}
+                              alt={screenshot.alt}
+                              loading="lazy"
+                            />
+                          </figure>
+                        ))}
+                      </div>
                     )}
 
-                    {selectedProject.details.githubUrl && (
-                      <a href={selectedProject.details.githubUrl} target="_blank" rel="noreferrer">
-                        GitHub <ArrowIcon />
-                      </a>
-                    )}
+                    <div className="resource-links">
+                      {selectedProject.details.liveUrl && (
+                        <a href={selectedProject.details.liveUrl} target="_blank" rel="noreferrer">
+                          Live-Demo <ArrowIcon />
+                        </a>
+                      )}
+
+                      {selectedProject.details.githubUrl && (
+                        <a href={selectedProject.details.githubUrl} target="_blank" rel="noreferrer">
+                          GitHub <ArrowIcon />
+                        </a>
+                      )}
+                    </div>
                   </section>
                 )}
 

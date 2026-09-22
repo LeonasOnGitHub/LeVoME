@@ -89,9 +89,18 @@ export const projects = [
             githubUrl:
                 'https://github.com/NewsAnalyseTool',
             screenshots: [
-                'NewsAnalyse.png',
-                'NewsAnalyse.png',
-                'NewsAnalyse.png',
+                {
+                    src: 'NewsAnalyse.png',
+                    alt: 'Screenshot der News Analyse Tool Anwendung',
+                },
+                {
+                    src: 'NewsAnalyse.png',
+                    alt: 'Screenshot der News Analyse Tool Anwendung'
+                },
+                {
+                    src: 'NewsAnalyse.png',
+                    alt: 'Screenshot der News Analyse Tool Anwendung'
+                },
             ],
         },
     },
