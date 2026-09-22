@@ -104,6 +104,39 @@ export const projects = [
             ],
         },
     },
+    {
+        title: 'LookUp Andriod App',
+        category: 'App Development',
+        description:
+            'Visualisiert Flugdaten in deiner nähe. Die Flugdaten von Flugzeugen in deiner Sichtweite können Angeschaut und gesammelt werden. Wie PokenGO nur mit Flugzeugen.',
+        stack: ['Android', 'Kotlin', 'REST APis', 'OpenStreetMap', 'TDD'],
+        details: {
+            problem:
+                'Nutzer sollen jeden Tag neue Challenges erhalten und ihren Fortschritt mit anderen vergleichen können.',
+            contribution:
+                'Ich habe das Frontend und Backend entwickelt sowie Nutzerverwaltung, Sicherheitskonzept und Leaderboards umgesetzt.',
+            implementation:
+                'Das Backend basiert auf Java und Spring Boot. Das React-Frontend kommuniziert über APIs mit dem Backend; PostgreSQL speichert Nutzer-, Challenge- und Fortschrittsdaten.',
+            outcome:
+                'Ich habe gelernt, eine Fullstack-Anwendung mit Authentifizierung, persistenter Datenhaltung und einer klaren Trennung von Frontend und Backend umzusetzen.',
+            githubUrl:
+                'https://github.com/LeonasOnGitHub/LookUP',
+            screenshots: [
+                {
+                    src: 'NewsAnalyse.png',
+                    alt: 'Screenshot der News Analyse Tool Anwendung',
+                },
+                {
+                    src: 'NewsAnalyse.png',
+                    alt: 'Screenshot der News Analyse Tool Anwendung'
+                },
+                {
+                    src: 'NewsAnalyse.png',
+                    alt: 'Screenshot der News Analyse Tool Anwendung'
+                },
+            ],
+        },
+    },
 ]
 
-export const skills = ['React', 'Angular', 'TypeScript', 'JavaScript', 'Node.js', 'Python', 'Java', 'SQL', 'Git & GitHub', 'Scala']
+export const skills = ['React', 'Angular', 'TypeScript', 'JavaScript', 'Node.js', 'Python', 'Java', 'SQL', 'Git & GitHub', 'Scala', 'Kotlin', 'PHP', 'Spring Boot', 'Azure DevOps', 'MongoDB', 'MySQL', 'PostgeSQL']
