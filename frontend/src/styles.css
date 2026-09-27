@@ -453,13 +453,14 @@ h3 {
 
 .skill-list {
     display: grid;
+    margin-bottom: 1.8rem;
     grid-template-columns: repeat(4, 1fr);
     border-top: 1px solid var(--line);
     border-left: 1px solid var(--line);
 }
 
 .skill-list span {
-    min-height: 7.5rem;
+    min-height: 5rem;
     padding: 1.2rem;
     display: flex;
     flex-direction: column;
@@ -467,6 +468,7 @@ h3 {
     border-right: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
     font-weight: 600;
+    
 }
 
 .skill-list b {
