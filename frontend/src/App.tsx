@@ -70,7 +70,6 @@ export default function App() {
         <section className="section" id="projects">
           <div className="section-heading">
             <div><p className="eyebrow">Ausgewählte Arbeiten</p><h2>Projekte</h2></div>
-            <p>Jede Karte erklärt kurz den Nutzen, die Umsetzung und die verwendeten Technologien.</p>
           </div>
           <div className="project-grid">
             {projects.map((project, index) => {
@@ -86,8 +85,6 @@ export default function App() {
                       {project.stack.map((item) => <li key={item}>{item}</li>)}
                     </ul>
                     <div className="project-links">
-                      <a href="#contact">GitHub <ArrowIcon /></a>
-
                       <button
                         type="button"
                         onClick={() => setOpenProject(isOpen ? null : project.title)}
@@ -135,7 +132,13 @@ export default function App() {
                 selectedProject.details.githubUrl ||
                 selectedProject.details.screenshots?.length) && (
                   <section className="project-resources">
-                    <h4>05 — Projekt ansehen</h4>
+                    <h4>Projekt ansehen</h4>
+
+                    {selectedProject.details.githubUrl && (
+                      <a href={selectedProject.details.githubUrl} target="_blank" rel="noreferrer">
+                        GitHub <ArrowIcon />
+                      </a>
+                    )}
 
                     {selectedProject.details.screenshots?.length && (
                       <div className="screenshot-gallery">
@@ -158,11 +161,7 @@ export default function App() {
                         </a>
                       )}
 
-                      {selectedProject.details.githubUrl && (
-                        <a href={selectedProject.details.githubUrl} target="_blank" rel="noreferrer">
-                          GitHub <ArrowIcon />
-                        </a>
-                      )}
+
                     </div>
                   </section>
                 )}
