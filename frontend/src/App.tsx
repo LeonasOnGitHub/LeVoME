@@ -53,8 +53,8 @@ export default function App() {
             <p className="eyebrow">Über mich</p>
             <h2>Technik mit Blick auf Menschen und Ergebnisse.</h2>
             <div className="prose">
-              <p>Ich entwickle moderne Anwendungen mit besonderem Interesse an verständlichen Benutzeroberflächen, wartbarer Software und pragmatischen Lösungen.</p>
-              <p>Diese beiden Absätze sind für deinen persönlichen Werdegang gedacht: Ausbildung, Berufserfahrung, Quereinstieg oder Selbststudium. Ersetze sie, sobald du deine Geschichte festgelegt hast.</p>
+              <p>{profile.prose.school}</p>
+              <p>{profile.prose.work}</p>
             </div>
           </div>
 

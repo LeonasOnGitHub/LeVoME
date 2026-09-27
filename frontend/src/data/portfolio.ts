@@ -9,6 +9,10 @@ export const profile = {
         'Drei Jahre Berufserfahrung als Werkstudent im Fullstack Development',
         'Ein Jahr Erfahrung als Sales Manager im Vertrieb eines Softwareprodukts',
     ],
+    prose: {
+        school: 'Programmieren begleitet mich schon seit meiner Schulzeit und hat sich von einem persönlichen Interesse zu meinem beruflichen Weg entwickelt. Nach meiner Ausbildung zum IT-Assistenten habe ich Angewandte Informatik studiert und dabei meine Kenntnisse in der Softwareentwicklung kontinuierlich ausgebaut. Besonders spannend finde ich es, aus einer Idee eine funktionierende Lösung zu entwickeln – egal ob im Backend, im Frontend oder bei der Verbindung beider Welten.',
+        work: 'In meiner bisherigen Berufserfahrung als Full-Stack Entwickler konnte ich an echten Anwendungen und Lösungen für die digitale Prozessautomatisierung arbeiten. Gleichzeitig habe ich durch meine aktuelle Tätigkeit im Kundenkontakt gelernt, technische Themen verständlich zu vermitteln und die Perspektive anderer einzubeziehen. Ich arbeite gerne im Team, kommuniziere offen und sehe neue Herausforderungen vor allem als Möglichkeit, dazuzulernen. Jetzt freue ich mich darauf, mein Wissen einzubringen, neue Technologien zu entdecken und an spannenden Projekten zu arbeiten.',
+    },
     email: 'leonas.medem@gmx.de',
     github: 'https://github.com/LeonasOnGitHub',
     linkedin: 'https://www.linkedin.com/in/leonas-von-medem-8a763b286/',
@@ -140,33 +144,33 @@ export const projects = [
 ]
 
 export const skillGroups = [
-  {
-    title: 'Frontend & UI',
-    items: ['React', 'Angular', 'TypeScript', 'JavaScript', 'JavaFX', 'Tkinter'],
-  },
-  {
-    title: 'Backend & Architektur',
-    items: [
-      'Java',
-      'Kotlin',
-      'Spring Boot',
-      'REST APIs',
-      'Microservices',
-      'Design Patterns',
-      'TDD',
-      'Clean Code',
-    ],
-  },
-  {
-    title: 'Datenbanken',
-    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'MS SQL Server'],
-  },
-  {
-    title: 'Tools & Delivery',
-    items: ['Git', 'Docker', 'Maven', 'Azure DevOps', 'Jira'],
-  },
-  {
-    title: 'Arbeitsweise',
-    items: ['Teamwork', 'Kundenkommunikation', 'Analytische Problemlösung', 'You build it, you own it'],
-  },
+    {
+        title: 'Frontend & UI',
+        items: ['React', 'Angular', 'TypeScript', 'JavaScript', 'JavaFX', 'Tkinter'],
+    },
+    {
+        title: 'Backend & Architektur',
+        items: [
+            'Java',
+            'Kotlin',
+            'Spring Boot',
+            'REST APIs',
+            'Microservices',
+            'Design Patterns',
+            'TDD',
+            'Clean Code',
+        ],
+    },
+    {
+        title: 'Datenbanken',
+        items: ['PostgreSQL', 'MySQL', 'MongoDB', 'MS SQL Server'],
+    },
+    {
+        title: 'Tools & Delivery',
+        items: ['Git', 'Docker', 'Maven', 'Azure DevOps', 'Jira'],
+    },
+    {
+        title: 'Arbeitsweise',
+        items: ['Teamwork', 'Kundenkommunikation', 'Analytische Problemlösung', 'You build it, you own it'],
+    },
 ]
