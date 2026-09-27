@@ -158,8 +158,8 @@ export const skillGroups = [
     ],
   },
   {
-    title: 'Datenbanken & Daten',
-    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Scala'],
+    title: 'Datenbanken',
+    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'MS SQL Server'],
   },
   {
     title: 'Tools & Delivery',
@@ -167,6 +167,6 @@ export const skillGroups = [
   },
   {
     title: 'Arbeitsweise',
-    items: ['Teamarbeit', 'Kundenkommunikation', 'Analytische Problemlösung'],
+    items: ['Teamwork', 'Kundenkommunikation', 'Analytische Problemlösung', 'You build it, you own it'],
   },
 ]
