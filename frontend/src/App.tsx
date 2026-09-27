@@ -1,4 +1,4 @@
-import { profile, projects, skills } from "./data/portfolio";
+import { profile, projects, skillGroups } from "./data/portfolio";
 import { useState, useEffect } from "react";
 
 
@@ -181,7 +181,19 @@ export default function App() {
         <section className="section skills-section" id="skills">
           <p className="eyebrow">Technologien</p>
           <h2>Mein Werkzeugkasten</h2>
-          <div className="skill-list">{skills.map((skill, index) => <span key={skill}><b>0{index + 1}</b>{skill}</span>)}</div>
+          <div className="skill-groups">
+            {skillGroups.map((group) => (
+              <section className="skill-group" key={group.title}>
+                <h3>{group.title}</h3>
+
+                <div className="skill-list">
+                  {group.items.map((skill) => (
+                    <span key={skill}>{skill}</span>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
         </section>
 
         <section className="section contact" id="contact">

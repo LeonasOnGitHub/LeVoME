@@ -139,4 +139,34 @@ export const projects = [
     },
 ]
 
-export const skills = ['React', 'Angular', 'TypeScript', 'JavaScript', 'Node.js', 'Python', 'Java', 'SQL', 'Git & GitHub', 'Scala', 'Kotlin', 'PHP', 'Spring Boot', 'Azure DevOps', 'MongoDB', 'MySQL', 'PostgeSQL']
+export const skillGroups = [
+  {
+    title: 'Frontend & UI',
+    items: ['React', 'Angular', 'TypeScript', 'JavaScript', 'JavaFX', 'Tkinter'],
+  },
+  {
+    title: 'Backend & Architektur',
+    items: [
+      'Java',
+      'Kotlin',
+      'Spring Boot',
+      'REST APIs',
+      'Microservices',
+      'Design Patterns',
+      'TDD',
+      'Clean Code',
+    ],
+  },
+  {
+    title: 'Datenbanken & Daten',
+    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Scala'],
+  },
+  {
+    title: 'Tools & Delivery',
+    items: ['Git', 'Docker', 'Maven', 'Azure DevOps', 'Jira'],
+  },
+  {
+    title: 'Arbeitsweise',
+    items: ['Teamarbeit', 'Kundenkommunikation', 'Analytische Problemlösung'],
+  },
+]
