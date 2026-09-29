@@ -29,7 +29,7 @@ export const projects = [
             problem:
                 'Nutzer sollen jeden Tag neue Challenges erhalten und ihren Fortschritt mit anderen vergleichen können.',
             contribution:
-                'Ich habe das Frontend und Backend entwickelt sowie Nutzerverwaltung, Sicherheitskonzept und Leaderboards umgesetzt.',
+                'Ich habe das Frontend und Backend entwickelt sowie Nutzerverwaltung und Sicherheitskonzept umgesetzt.',
             implementation:
                 'Das Backend basiert auf Java und Spring Boot. Das React-Frontend kommuniziert über APIs mit dem Backend; PostgreSQL speichert Nutzer-, Challenge- und Fortschrittsdaten.',
             outcome:
@@ -48,13 +48,13 @@ export const projects = [
         stack: ['Angular', 'TypeScript', 'REST APIs'],
         details: {
             problem:
-                'Nutzer sollen jeden Tag neue Challenges erhalten und ihren Fortschritt mit anderen vergleichen können.',
+                'Baurechnungen müssen im Rahmen von Freigabeprozessen großer Bauprojekte häufig auf Positionsebene geprüft und korrigiert werden. Dafür sollte eine übersichtliche und effiziente Anwendung geschaffen werden.',
             contribution:
-                'Ich habe das Frontend und Backend entwickelt sowie Nutzerverwaltung, Sicherheitskonzept und Leaderboards umgesetzt.',
+                'Ich habe das Projekt vollständig eigenständig umgesetzt, von der Problemanalyse und den ersten Konzeptentwürfen über das Prototyping und Architekturdesign bis hin zur Planung von Tasks und Entwicklungsabläufen. Anschließend habe ich die Anwendung selbstständig in Angular entwickelt.',
             implementation:
-                'Das Backend basiert auf Java und Spring Boot. Das React-Frontend kommuniziert über APIs mit dem Backend; PostgreSQL speichert Nutzer-, Challenge- und Fortschrittsdaten.',
+                'Die Anwendung wurde als reines Angular-Projekt umgesetzt. Bei der Entwicklung habe ich großen Wert auf eine komponentenbasierte Architektur und eine klare Struktur gelegt. Für die UI-Anforderungen kamen größtenteils Komponenten von Syncfusion zum Einsatz. Zusätzlich habe ich verschiedene Design Patterns verwendet, um die Anwendung strukturiert und wartbar aufzubauen.',
             outcome:
-                'Ich habe gelernt, eine Fullstack-Anwendung mit Authentifizierung, persistenter Datenhaltung und einer klaren Trennung von Frontend und Backend umzusetzen.',
+                'Durch das Projekt konnte ich den gesamten Entwicklungsprozess einer Anwendung eigenständig durchlaufen, von der Analyse eines konkreten Problems bis zur technischen Umsetzung. Besonders wertvoll waren dabei die Erfahrungen in Architekturdesign, komponentenbasierter Entwicklung und der strukturierten Planung eines Softwareprojekts.',
 
         },
     },
