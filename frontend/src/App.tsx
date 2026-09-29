@@ -160,19 +160,9 @@ export default function App() {
                           Live-Demo <ArrowIcon />
                         </a>
                       )}
-
-
                     </div>
                   </section>
                 )}
-
-              <button
-                type="button"
-                className="details-close"
-                onClick={() => setOpenProject(null)}
-              >
-                Details schließen
-              </button>
             </div>
           )}
         </section>

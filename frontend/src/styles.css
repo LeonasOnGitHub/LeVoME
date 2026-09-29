@@ -308,6 +308,7 @@ h3 {
 
 .details-close {
     flex-shrink: 0;
+    margin-top: 2.5rem;
     padding: 0;
     border: 0;
     background: transparent;
