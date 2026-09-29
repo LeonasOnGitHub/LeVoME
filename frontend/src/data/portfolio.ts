@@ -66,13 +66,13 @@ export const projects = [
         stack: ['Java', 'Spring Boot', 'React', 'RabbitMQ', 'Docker'],
         details: {
             problem:
-                'Nutzer sollen jeden Tag neue Challenges erhalten und ihren Fortschritt mit anderen vergleichen können.',
+                'Für das Projekt sollte ein moderner Online-Shop für Comics entwickelt werden. Neben der eigentlichen Shop-Funktionalität lag der Fokus darauf, die Anwendung als skalierbare Microservice-Architektur aufzubauen und die einzelnen Komponenten klar voneinander zu trennen.',
             contribution:
-                'Ich habe das Frontend und Backend entwickelt sowie Nutzerverwaltung, Sicherheitskonzept und Leaderboards umgesetzt.',
+                'Ich habe die Anwendung als Fullstack-Projekt umgesetzt und dabei sowohl am React-Frontend als auch am Spring-Boot-Backend mit entwickelt. Dabei habe ich mich insbesondere mit der Strukturierung einer Microservice-Architektur und der Kommunikation zwischen den einzelnen Services beschäftigt.',
             implementation:
-                'Das Backend basiert auf Java und Spring Boot. Das React-Frontend kommuniziert über APIs mit dem Backend; PostgreSQL speichert Nutzer-, Challenge- und Fortschrittsdaten.',
+                'Das Backend basiert auf mehreren Spring-Boot-Microservices, die über RabbitMQ miteinander kommunizieren. Das React-Frontend ist über REST-APIs an das Backend angebunden. PostgreSQL dient als Datenbank, während Keycloak die Authentifizierung und Nutzerverwaltung übernimmt. Die einzelnen Komponenten werden mit Docker containerisiert.',
             outcome:
-                'Ich habe gelernt, eine Fullstack-Anwendung mit Authentifizierung, persistenter Datenhaltung und einer klaren Trennung von Frontend und Backend umzusetzen.',
+                'Das Projekt hat mir einen umfassenden Einblick in die Entwicklung verteilter Anwendungen gegeben. Besonders wertvoll waren die Erfahrungen mit Microservice-Architekturen, asynchroner Kommunikation über RabbitMQ, zentralem Identity Management mit Keycloak sowie der Containerisierung einer Fullstack-Anwendung mit Docker.',
         },
     },
     {
