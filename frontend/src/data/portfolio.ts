@@ -120,7 +120,7 @@ export const projects = [
             outcome:
                 'Durch die vollständige Eigenentwicklung konnte ich den gesamten Prozess von der Produktidee bis zur fertigen Anwendung durchlaufen. Besonders beschäftigt habe ich mich dabei mit der Verarbeitung externer API-Daten, der ortsabhängigen Darstellung von Informationen und der Entwicklung einer interaktiven Kartenanwendung.',
             githubUrl:
-                'https://github.com/LeonasOnGitHub/LookUP',
+                'https://github.com/LeonasOnGitHub/LookUP',  
         },
     },
 ]
