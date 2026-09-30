@@ -83,13 +83,13 @@ export const projects = [
         stack: ['Scala', 'MongoDB', 'React'],
         details: {
             problem:
-                'Nutzer sollen jeden Tag neue Challenges erhalten und ihren Fortschritt mit anderen vergleichen können.',
+                'Das Ziel des Projekts war es, Nachrichten aus verschiedenen Quellen automatisiert zu erfassen und anschließend hinsichtlich ihrer Stimmung zu analysieren. Die gesammelten Nachrichten sollten in die Kategorien positiv, neutral oder negativ eingeordnet und übersichtlich dargestellt werden.',
             contribution:
-                'Ich habe das Frontend und Backend entwickelt sowie Nutzerverwaltung, Sicherheitskonzept und Leaderboards umgesetzt.',
+                'Ich war hauptsächlich für die Entwicklung der Crawler, leitung sowie protokollierung der Meetings und den Architekturentwurf verantwortlich. Da es nur wenige und sehr allgemein formulierte Vorgaben gab, mussten wir als Gruppe eigenständig entscheiden, wie wir das Projekt strukturieren, Aufgaben verteilen und technische Herausforderungen lösen.',
             implementation:
-                'Das Backend basiert auf Java und Spring Boot. Das React-Frontend kommuniziert über APIs mit dem Backend; PostgreSQL speichert Nutzer-, Challenge- und Fortschrittsdaten.',
+                'Die Nachrichten werden durch in Scala entwickelte Crawler aus verschiedenen Quellen gesammelt und in einer MongoDB-Datenbank gespeichert. Anschließend werden die Daten für die Analyse aufbereitet und einer von drei Kategorien  positiv, neutral oder negativ zugeordnet. Die Ergebnisse werden über ein React-Frontend visualisiert.',
             outcome:
-                'Ich habe gelernt, eine Fullstack-Anwendung mit Authentifizierung, persistenter Datenhaltung und einer klaren Trennung von Frontend und Backend umzusetzen.',
+                'Die größte Herausforderung bestand darin, ohne detaillierte Vorgaben eine funktionierende Softwarearchitektur und einen geeigneten Entwicklungsprozess als Team zu etablieren. Dabei habe ich gelernt, technische Entscheidungen gemeinsam zu treffen, Aufgaben sinnvoll aufzuteilen und verschiedene Komponenten anschließend zu einem Gesamtsystem zusammenzuführen. Besonders wertvoll waren für mich dabei die Erfahrungen in der Architekturplanung, Projektorganisation und Zusammenarbeit im Team.',
             githubUrl:
                 'https://github.com/NewsAnalyseTool',
             screenshots: [
