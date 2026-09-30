@@ -44,7 +44,7 @@ export default function App() {
             <a className="button button-ghost" href="#contact">Kontakt aufnehmen</a>
           </div>
           <div className="hero-meta reveal" aria-label="Schwerpunkte">
-            <span>React & TypeScript</span><span>Webentwicklung</span><span>Saubere Architektur</span>
+            <span>Java & Spring Boot</span><span>Docker & DevOps</span><span>React & Angular</span><span>REST APIs</span><span>Clean Code</span>
           </div>
         </section>
 

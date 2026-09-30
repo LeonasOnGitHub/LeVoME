@@ -45,7 +45,7 @@ export const projects = [
         category: 'Bachelorarbeit',
         description:
             'Ein Tool zur positionsgenauen Korrektur von Rechnungen, angebunden an Backend-APIs.',
-        stack: ['Angular', 'TypeScript', 'REST APIs'],
+        stack: ['Angular', 'TypeScript', 'Syncfusion'],
         details: {
             problem:
                 'Baurechnungen müssen im Rahmen von Freigabeprozessen großer Bauprojekte häufig auf Positionsebene geprüft und korrigiert werden. Dafür sollte eine übersichtliche und effiziente Anwendung geschaffen werden.',
@@ -98,12 +98,8 @@ export const projects = [
                     alt: 'Screenshot der News Analyse Tool Anwendung',
                 },
                 {
-                    src: 'NewsAnalyse.png',
-                    alt: 'Screenshot der News Analyse Tool Anwendung'
-                },
-                {
-                    src: 'NewsAnalyse.png',
-                    alt: 'Screenshot der News Analyse Tool Anwendung'
+                    src: 'NewsAnalyseKomponetendiagram.png',
+                    alt: 'Komponentendiagram'
                 },
             ],
         },
@@ -125,20 +121,6 @@ export const projects = [
                 'Durch die vollständige Eigenentwicklung konnte ich den gesamten Prozess von der Produktidee bis zur fertigen Anwendung durchlaufen. Besonders beschäftigt habe ich mich dabei mit der Verarbeitung externer API-Daten, der ortsabhängigen Darstellung von Informationen und der Entwicklung einer interaktiven Kartenanwendung.',
             githubUrl:
                 'https://github.com/LeonasOnGitHub/LookUP',
-            screenshots: [
-                {
-                    src: 'NewsAnalyse.png',
-                    alt: 'Screenshot der News Analyse Tool Anwendung',
-                },
-                {
-                    src: 'NewsAnalyse.png',
-                    alt: 'Screenshot der News Analyse Tool Anwendung'
-                },
-                {
-                    src: 'NewsAnalyse.png',
-                    alt: 'Screenshot der News Analyse Tool Anwendung'
-                },
-            ],
         },
     },
 ]
