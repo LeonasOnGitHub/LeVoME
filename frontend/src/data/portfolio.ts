@@ -116,13 +116,13 @@ export const projects = [
         stack: ['Android', 'Kotlin', 'REST APis', 'OpenStreetMap', 'TDD'],
         details: {
             problem:
-                'Nutzer sollen jeden Tag neue Challenges erhalten und ihren Fortschritt mit anderen vergleichen können.',
+                'Die App soll Flugdaten aus der Umgebung des Nutzers sichtbar und erlebbar machen. Statt alle verfügbaren Flugzeuge darzustellen, werden nur Flugzeuge in der aktuellen Sichtweite des Nutzers angezeigt. Über die Karte können diese ausgewählt und zusätzliche Informationen zu Flug und Flugzeug angezeigt und gesammelt werden.',
             contribution:
-                'Ich habe das Frontend und Backend entwickelt sowie Nutzerverwaltung, Sicherheitskonzept und Leaderboards umgesetzt.',
+                'Die gesamte Anwendung habe ich eigenständig entwickelt. Von der ursprünglichen Idee über das UI- und Architekturdesign bis hin zur technischen Umsetzung.',
             implementation:
-                'Das Backend basiert auf Java und Spring Boot. Das React-Frontend kommuniziert über APIs mit dem Backend; PostgreSQL speichert Nutzer-, Challenge- und Fortschrittsdaten.',
+                'Die App ruft Flugdaten über eine öffentliche API ab und stellt diese auf einer OpenStreetMap dar. Mithilfe der GPS-Daten des Nutzers werden nur Flugzeuge innerhalb seiner aktuellen Sichtweite dargestellt. Durch die Auswahl eines Flugzeugs können detaillierte Informationen zu Model und der aktuellen Reise angezeigt werden. Zusätzlich können Nutzer entdeckte Flugzeuge sammeln, ähnlich wie bei PokenmonGO.',
             outcome:
-                'Ich habe gelernt, eine Fullstack-Anwendung mit Authentifizierung, persistenter Datenhaltung und einer klaren Trennung von Frontend und Backend umzusetzen.',
+                'Durch die vollständige Eigenentwicklung konnte ich den gesamten Prozess von der Produktidee bis zur fertigen Anwendung durchlaufen. Besonders beschäftigt habe ich mich dabei mit der Verarbeitung externer API-Daten, der ortsabhängigen Darstellung von Informationen und der Entwicklung einer interaktiven Kartenanwendung.',
             githubUrl:
                 'https://github.com/LeonasOnGitHub/LookUP',
             screenshots: [
