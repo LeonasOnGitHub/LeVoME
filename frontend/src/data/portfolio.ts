@@ -35,7 +35,7 @@ export const projects = [
             outcome:
                 'Ich habe gelernt, eine Fullstack-Anwendung mit Authentifizierung, persistenter Datenhaltung und einer klaren Trennung von Frontend und Backend umzusetzen.',
             liveUrl:
-                'https://daily-challenge-app.example.com',
+                'https://daylenge.vercel.app/',
             githubUrl:
                 'https://github.com/LeonasOnGitHub/daylenge'
         },
