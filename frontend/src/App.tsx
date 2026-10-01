@@ -157,7 +157,7 @@ export default function App() {
                     <div className="resource-links">
                       {selectedProject.details.liveUrl && (
                         <a>
-                         <div className="phone" style={{ border: "12px solid #111", borderRadius: 48, overflow: "hidden", width: 375, height: 780 }}>
+                          <div className="phone">
                             <div className="notch"></div>
                             <iframe src="https://daylenge.vercel.app/" title="Meine App"
                               allow="clipboard-write; geolocation"></iframe>
