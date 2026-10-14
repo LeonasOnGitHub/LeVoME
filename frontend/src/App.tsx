@@ -175,7 +175,7 @@ export default function App() {
                           <div className="phone">
                             <div className="notch"></div>
                             <iframe src="https://daylenge.vercel.app/" title="Meine App"
-                              allow="clipboard-write; geolocation"></iframe>
+                              allow="clipboard-write; geolocation"  scrolling="no"></iframe>
                           </div>
                         </a>
                       )}
