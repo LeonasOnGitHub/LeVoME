@@ -76,7 +76,7 @@ export default function App() {
 
         </section>
 
-        <section className="section" id="projects">
+        <section className="section section-projects" id="projects">
           <div className="section-heading">
             <div><p className="eyebrow">Ausgewählte Arbeiten</p><h2>Projekte</h2></div>
           </div>

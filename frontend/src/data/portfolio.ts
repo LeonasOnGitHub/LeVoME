@@ -85,7 +85,7 @@ export const projects = [
             problem:
                 'Das Ziel des Projekts war es, Nachrichten aus verschiedenen Quellen automatisiert zu erfassen und anschließend hinsichtlich ihrer Stimmung zu analysieren. Die gesammelten Nachrichten sollten in die Kategorien positiv, neutral oder negativ eingeordnet und übersichtlich dargestellt werden.',
             contribution:
-                'Ich war hauptsächlich für die Entwicklung der Crawler, leitung sowie protokollierung der Meetings und den Architekturentwurf verantwortlich. Da es nur wenige und sehr allgemein formulierte Vorgaben gab, mussten wir als Gruppe eigenständig entscheiden, wie wir das Projekt strukturieren, Aufgaben verteilen und technische Herausforderungen lösen.',
+                'Ich war hauptsächlich für die Entwicklung der Crawler, leitung sowie protokollierung der Meetings und den Architekturentwurf verantwortlich. Wir mussten als Gruppe eigenständig entscheiden, wie wir das Projekt strukturieren, Aufgaben verteilen und technische Herausforderungen lösen.',
             implementation:
                 'Die Nachrichten werden durch in Scala entwickelte Crawler aus verschiedenen Quellen gesammelt und in einer MongoDB-Datenbank gespeichert. Anschließend werden die Daten für die Analyse aufbereitet und einer von drei Kategorien  positiv, neutral oder negativ zugeordnet. Die Ergebnisse werden über ein React-Frontend visualisiert.',
             outcome:
@@ -105,10 +105,10 @@ export const projects = [
         },
     },
     {
-        title: 'LookUp Andriod App',
+        title: 'LookUp Android App',
         category: 'App Development',
         description:
-            'Visualisiert Flugdaten in deiner nähe. Die Flugdaten von Flugzeugen in deiner Sichtweite können Angeschaut und gesammelt werden. Wie PokenGO nur mit Flugzeugen.',
+            'Visualisiert Flugdaten in deiner nähe. Die Flugdaten von Flugzeugen in deiner Sichtweite können angesehen und gesammelt werden. Wie PokemonGO nur mit Flugzeugen.',
         stack: ['Android', 'Kotlin', 'REST APis', 'OpenStreetMap', 'TDD'],
         details: {
             problem:
