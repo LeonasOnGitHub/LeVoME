@@ -41,7 +41,7 @@ export const projects = [
         },
     },
     {
-        title: 'Rechnungspositionsbearbeitungstool',
+        title: 'Rechnungsbearbeitungstool',
         category: 'Bachelorarbeit',
         description:
             'Ein Tool zur positionsgenauen Korrektur von Rechnungen, angebunden an Backend-APIs.',

@@ -267,11 +267,17 @@ h3 {
     background: var(--surface);
     border: 1px solid var(--line);
     transition: transform .25s, border-color .25s;
+    cursor: pointer;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
     border-color: #43615f;
+}
+
+.project-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
 }
 
 .project-visual {

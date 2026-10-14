@@ -25,7 +25,7 @@ export default function App() {
     <>
       <a className="skip-link" href="#content">Zum Inhalt springen</a>
       <header className="site-header">
-        
+
         <nav aria-label="Hauptnavigation">
           <a href="#about">Über mich</a>
           <a href="#projects">Projekte</a>
@@ -76,26 +76,41 @@ export default function App() {
               const isOpen = openProject === project.title
 
               return (
-                <article className="project-card" key={project.title}>
-                  <div className={`project-visual visual-${index + 1}`} aria-hidden="true"><span>{project.category}</span></div>
+
+                <article
+                  className="project-card"
+                  key={project.title}
+                  onClick={() => setOpenProject(isOpen ? null : project.title)}
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={isOpen}
+                  aria-controls="project-details"
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      event.preventDefault();
+                      setOpenProject(isOpen ? null : project.title);
+                    }
+                  }}
+                >
+                  <div
+                    className={`project-visual visual-${index + 1}`}
+                    aria-hidden="true"
+                  >
+                    <span>{project.category}</span>
+                  </div>
+
                   <div className="project-content">
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>
+
                     <ul className="tags" aria-label={`Technologien für ${project.title}`}>
-                      {project.stack.map((item) => <li key={item}>{item}</li>)}
+                      {project.stack.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
                     </ul>
-                    <div className="project-links">
-                      <button
-                        type="button"
-                        onClick={() => setOpenProject(isOpen ? null : project.title)}
-                        aria-expanded={isOpen}
-                        aria-controls="project-details"
-                      >
-                        {isOpen ? 'Details schließen' : 'Details'} <ArrowIcon />
-                      </button>
-                    </div>
                   </div>
                 </article>
+
               )
             })}
           </div>
