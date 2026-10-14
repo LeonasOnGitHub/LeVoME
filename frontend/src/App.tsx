@@ -56,6 +56,15 @@ export default function App() {
               <p>{profile.prose.school}</p>
               <p>{profile.prose.work}</p>
             </div>
+            <a
+              href="/Lebenslauf.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cv-download"
+            >
+              <span>Lebenslauf ansehen</span>
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
 
           <div className="about-photo">
@@ -175,7 +184,7 @@ export default function App() {
                           <div className="phone">
                             <div className="notch"></div>
                             <iframe src="https://daylenge.vercel.app/" title="Meine App"
-                              allow="clipboard-write; geolocation"  scrolling="no"></iframe>
+                              allow="clipboard-write; geolocation" scrolling="no"></iframe>
                           </div>
                         </a>
                       )}
