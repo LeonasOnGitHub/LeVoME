@@ -25,7 +25,7 @@ export default function App() {
     <>
       <a className="skip-link" href="#content">Zum Inhalt springen</a>
       <header className="site-header">
-        <a className="brand" href="#home" aria-label="Startseite">[DN]</a>
+        
         <nav aria-label="Hauptnavigation">
           <a href="#about">Über mich</a>
           <a href="#projects">Projekte</a>
