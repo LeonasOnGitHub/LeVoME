@@ -27,9 +27,9 @@ export const projects = [
         stack: ['Java', 'Spring Boot', 'React', 'JavaScript', 'PostgreSQL'],
         details: {
             problem:
-                'Nutzer sollen jeden Tag neue Challenges erhalten und ihren Fortschritt mit anderen vergleichen können.',
+                'Nutzer sollen täglich neue Challenges erhalten und ihren Fortschritt mit anderen vergleichen können. Dafür mussten neben der Challenge-Logik auch eine Nutzerverwaltung und eine zentrale Datenverarbeitung implementiert werden, da eine rein lokale Speicherung auf dem Smartphone keinen Vergleich der Fortschritte zwischen verschiedenen Nutzern zulässt.',
             contribution:
-                'Ich habe das Frontend und Backend entwickelt sowie Nutzerverwaltung und Sicherheitskonzept umgesetzt.',
+                'Ich habe die Anwendung eigenständig von der ersten Idee bis zur fertigen Umsetzung entwickelt. Dazu gehörten die Ausarbeitung des Konzepts, die Planung der Architektur und der technischen Komponenten sowie die Entwicklung von Frontend und Backend. Darüber hinaus habe ich die Nutzerverwaltung integriert und ein passendes Sicherheitskonzept umgesetzt.',
             implementation:
                 'Das Backend basiert auf Java und Spring Boot. Das React-Frontend kommuniziert über APIs mit dem Backend; PostgreSQL speichert Nutzer-, Challenge- und Fortschrittsdaten.',
             outcome:
