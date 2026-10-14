@@ -216,7 +216,7 @@ export default function App() {
         <section className="section contact" id="contact">
           <p className="eyebrow">Kontakt</p>
           <div className="contact-links">
-            <a href="mailto:{profile.email}">{profile.email} <ArrowIcon /></a>
+            <a href={`mailto:${profile.email}`}>{profile.email} <ArrowIcon /></a>
             <a href={profile.github} target="_blank" rel="noreferrer">GitHub <ArrowIcon /></a>
             <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowIcon /></a>
           </div>
