@@ -87,7 +87,7 @@ export const projects = [
             contribution:
                 'Ich war hauptsächlich für die Entwicklung der Crawler, leitung sowie protokollierung der Meetings und den Architekturentwurf verantwortlich. Wir mussten als Gruppe eigenständig entscheiden, wie wir das Projekt strukturieren, Aufgaben verteilen und technische Herausforderungen lösen.',
             implementation:
-                'Die Nachrichten werden durch in Scala entwickelte Crawler aus verschiedenen Quellen gesammelt und in einer MongoDB-Datenbank gespeichert. Anschließend werden die Daten für die Analyse aufbereitet und einer von drei Kategorien  positiv, neutral oder negativ zugeordnet. Die Ergebnisse werden über ein React-Frontend visualisiert.',
+                'Die Nachrichten werden durch in Scala entwickelte Crawler aus verschiedenen Quellen gesammelt und in einer MongoDB-Datenbank gespeichert. Anschließend werden die Daten für die Analyse aufbereitet und sematisch kategorisiert. Die Ergebnisse werden über ein React-Frontend visualisiert.',
             outcome:
                 'Die größte Herausforderung bestand darin, ohne detaillierte Vorgaben eine funktionierende Softwarearchitektur und einen geeigneten Entwicklungsprozess als Team zu etablieren. Dabei habe ich gelernt, technische Entscheidungen gemeinsam zu treffen, Aufgaben sinnvoll aufzuteilen und verschiedene Komponenten anschließend zu einem Gesamtsystem zusammenzuführen. Besonders wertvoll waren für mich dabei die Erfahrungen in der Architekturplanung, Projektorganisation und Zusammenarbeit im Team.',
             githubUrl:
