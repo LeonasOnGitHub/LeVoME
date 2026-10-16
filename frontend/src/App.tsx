@@ -214,7 +214,9 @@ export default function App() {
         </section>
 
         <section className="section contact" id="contact">
-          <p className="eyebrow">Kontakt</p>
+          <p className="eyebrow">Weitere Infos</p>
+          <h2>Kontakt
+          </h2>
           <div className="contact-links">
             <a href={`mailto:${profile.email}`}>{profile.email} <ArrowIcon /></a>
             <a href={profile.github} target="_blank" rel="noreferrer">GitHub <ArrowIcon /></a>
@@ -222,7 +224,7 @@ export default function App() {
           </div>
         </section>
       </main>
-      <footer><span>{profile.name}</span></footer>
+      <footer><span>© 2026 {profile.name}. Alle Rechte vorbehalten.</span></footer>
     </>
   )
 }
