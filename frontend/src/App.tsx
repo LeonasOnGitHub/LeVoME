@@ -119,7 +119,6 @@ export default function App() {
                     </ul>
                   </div>
                 </article>
-
               )
             })}
           </div>
@@ -157,13 +156,11 @@ export default function App() {
                 selectedProject.details.screenshots?.length) && (
                   <section className="project-resources">
                     <h4>Projekt ansehen</h4>
-
                     {selectedProject.details.githubUrl && (
                       <a href={selectedProject.details.githubUrl} target="_blank" rel="noreferrer">
                         GitHub <ArrowIcon />
                       </a>
                     )}
-
                     {selectedProject.details.screenshots?.length && (
                       <div className="screenshot-gallery">
                         {selectedProject.details.screenshots.map((screenshot) => (
@@ -177,13 +174,12 @@ export default function App() {
                         ))}
                       </div>
                     )}
-
                     <div className="resource-links">
                       {selectedProject.details.liveUrl && (
                         <a>
                           <div className="phone">
                             <div className="notch"></div>
-                            <iframe src="https://daylenge.vercel.app/" title="Meine App"
+                            <iframe src={selectedProject.details.liveUrl} title="Meine App"
                               allow="clipboard-write; geolocation" scrolling="no"></iframe>
                           </div>
                         </a>
