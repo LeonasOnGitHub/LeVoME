@@ -645,7 +645,19 @@ footer {
     background: #fff;
 }
 
-
+.notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 8px;
+    background: #565656;
+    border-radius: 0 0 18px 18px;
+    z-index: 2;
+    pointer-events: none;
+    /* Klicks gehen durch zum iframe */
+}
 
 /* Auf kleinen Bildschirmen: Rahmen reduzieren */
 @media (max-width: 600px) {
