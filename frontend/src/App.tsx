@@ -222,7 +222,7 @@ export default function App() {
       </main>
       <footer>
         <span>© 2026 {profile.name}. Alle Rechte vorbehalten.</span>
-        </footer>
+      </footer>
     </>
   )
 }
