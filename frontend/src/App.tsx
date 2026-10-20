@@ -73,7 +73,6 @@ export default function App() {
               alt="Porträt von Leonas Freiherr von Medem"
             />
           </div>
-
         </section>
 
         <section className="section section-projects" id="projects">
@@ -85,7 +84,6 @@ export default function App() {
               const isOpen = openProject === project.title
 
               return (
-
                 <article
                   className="project-card"
                   key={project.title}
@@ -126,10 +124,12 @@ export default function App() {
           {selectedProject && (
             <div className="project-details-content"
               id="project-details">
+                
               <p className="eyebrow">{selectedProject.category}</p>
               <h3>{selectedProject.title}</h3>
 
               <div className="details-grid">
+
                 <section>
                   <h4>Ausgangsproblem</h4>
                   <p>{selectedProject.details.problem}</p>

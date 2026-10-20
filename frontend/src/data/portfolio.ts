@@ -60,10 +60,10 @@ export const projects = [
     },
     {
         title: 'Online Comic Book Shop',
-        category: 'Microservices',
+        category: 'Fullstack Web App',
         description:
             'Ein Online-Shop für Comics mit einer Microservice-Architektur und asynchroner Kommunikation.',
-        stack: ['Java', 'Spring Boot', 'React', 'RabbitMQ', 'Docker'],
+        stack: ['Java', 'Spring Boot', 'React', 'RabbitMQ', 'Docker', 'Microservices'],
         details: {
             problem:
                 'Für das Projekt sollte ein moderner Online-Shop für Comics entwickelt werden. Neben der eigentlichen Shop-Funktionalität lag der Fokus darauf, die Anwendung als skalierbare Microservice-Architektur aufzubauen und die einzelnen Komponenten klar voneinander zu trennen.',
