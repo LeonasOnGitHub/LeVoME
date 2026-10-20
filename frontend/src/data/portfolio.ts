@@ -153,6 +153,6 @@ export const skillGroups = [
     },
     {
         title: 'Arbeitsweise',
-        items: ['Teamwork', 'Kundenkommunikation', 'Analytische Problemlösung', 'You build it, you own it'],
+        items: ['Teamwork', 'Kunden kommunikation', 'Analytische Problemlösung', 'You build it, you own it'],
     },
 ]

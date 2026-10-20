@@ -124,7 +124,7 @@ export default function App() {
           {selectedProject && (
             <div className="project-details-content"
               id="project-details">
-                
+
               <p className="eyebrow">{selectedProject.category}</p>
               <h3>{selectedProject.title}</h3>
 
@@ -220,7 +220,9 @@ export default function App() {
           </div>
         </section>
       </main>
-      <footer><span>© 2026 {profile.name}. Alle Rechte vorbehalten.</span></footer>
+      <footer>
+        <span>© 2026 {profile.name}. Alle Rechte vorbehalten.</span>
+        </footer>
     </>
   )
 }
