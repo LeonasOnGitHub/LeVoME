@@ -123,6 +123,23 @@ export const projects = [
                 'https://github.com/LeonasOnGitHub/LookUP',
         },
     },
+     {
+        title: 'Demo Manager',
+        category: 'Fullstack Web App',
+        description:
+            'Ein Online-Shop für Comics mit einer Microservice-Architektur und asynchroner Kommunikation.',
+        stack: ['Java', 'Spring Boot', 'React', 'RabbitMQ', 'Docker', 'Microservices'],
+        details: {
+            problem:
+                'Für das Projekt sollte ein moderner Online-Shop für Comics entwickelt werden. Neben der eigentlichen Shop-Funktionalität lag der Fokus darauf, die Anwendung als skalierbare Microservice-Architektur aufzubauen und die einzelnen Komponenten klar voneinander zu trennen.',
+            contribution:
+                'Ich habe die Anwendung als Fullstack-Projekt umgesetzt und dabei sowohl am React-Frontend als auch am Spring-Boot-Backend mit entwickelt. Dabei habe ich mich insbesondere mit der Strukturierung einer Microservice-Architektur und der Kommunikation zwischen den einzelnen Services beschäftigt.',
+            implementation:
+                'Das Backend basiert auf mehreren Spring-Boot-Microservices, die über RabbitMQ miteinander kommunizieren. Das React-Frontend ist über REST-APIs an das Backend angebunden. PostgreSQL dient als Datenbank, während Keycloak die Authentifizierung und Nutzerverwaltung übernimmt. Die einzelnen Komponenten werden mit Docker containerisiert.',
+            outcome:
+                'Das Projekt hat mir einen umfassenden Einblick in die Entwicklung verteilter Anwendungen gegeben. Besonders wertvoll waren die Erfahrungen mit Microservice-Architekturen, asynchroner Kommunikation über RabbitMQ, zentralem Identity Management mit Keycloak sowie der Containerisierung einer Fullstack-Anwendung mit Docker.',
+        },
+    },
 ]
 
 export const skillGroups = [
