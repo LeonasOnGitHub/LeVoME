@@ -128,16 +128,16 @@ export const projects = [
         category: 'Web App',
         description:
             'Ein persönliches Dashboard zur Planung und Auswertung von Vertriebsdemos. Die Anwendung bündelt Termine, Status und Quartalsziele und berücksichtigt Urlaub und Krankheit bei der Zielberechnung.',
-        stack: ['Java', 'Spring Boot', 'React', 'RabbitMQ', 'Docker', 'Microservices'],
+        stack: ['React', 'Vite', 'PowerShell', 'TypeScript'],
         details: {
             problem:
-                'Für das Projekt sollte ein moderner Online-Shop für Comics entwickelt werden. Neben der eigentlichen Shop-Funktionalität lag der Fokus darauf, die Anwendung als skalierbare Microservice-Architektur aufzubauen und die einzelnen Komponenten klar voneinander zu trennen.',
+                'Die Verwaltung von Vertriebsdemos in Excel erforderte manuelle Pflege und aufwendige Berechnungen. Durchgeführte Termine, geplante Demos und Abwesenheitsgutschriften mussten nachvollziehbar getrennt werden, um den tatsächlichen Quartalsfortschritt zuverlässig abzubilden.',
             contribution:
-                'Ich habe die Anwendung als Fullstack-Projekt umgesetzt und dabei sowohl am React-Frontend als auch am Spring-Boot-Backend mit entwickelt. Dabei habe ich mich insbesondere mit der Strukturierung einer Microservice-Architektur und der Kommunikation zwischen den einzelnen Services beschäftigt.',
+                'Konzeption und Umsetzung einer auf den persönlichen Vertriebsalltag zugeschnittenen Anwendung – von der Dashboard-Gestaltung über die Berechnungslogik bis zur Übernahme bestehender Excel-Daten.',
             implementation:
-                'Das Backend basiert auf mehreren Spring-Boot-Microservices, die über RabbitMQ miteinander kommunizieren. Das React-Frontend ist über REST-APIs an das Backend angebunden. PostgreSQL dient als Datenbank, während Keycloak die Authentifizierung und Nutzerverwaltung übernimmt. Die einzelnen Komponenten werden mit Docker containerisiert.',
+                'Entwicklung einer responsiven React-Anwendung mit Demo-Verwaltung, Suche, Statusfiltern und Abwesenheitserfassung. Die Zielberechnung berücksichtigt historische Quartalswerte und macht fehlende Berechnungsgrundlagen sichtbar. Daten werden lokal im Browser gespeichert und können über JSON-Backups gesichert und wiederhergestellt werden. Ein Windows-Desktop-Starter öffnet die Anwendung in einem eigenen Chrome-Fenster.',
             outcome:
-                'Das Projekt hat mir einen umfassenden Einblick in die Entwicklung verteilter Anwendungen gegeben. Besonders wertvoll waren die Erfahrungen mit Microservice-Architekturen, asynchroner Kommunikation über RabbitMQ, zentralem Identity Management mit Keycloak sowie der Containerisierung einer Fullstack-Anwendung mit Docker.',
+                'Eine zentrale Übersicht über bestätigte Ergebnisse, geplante Termine und den Fortschritt zum Quartalsziel. Automatisierte Berechnungen reduzieren manuelle Rechenschritte und machen die Anrechnung von Abwesenheiten nachvollziehbar. Die Anwendung funktioniert ohne Benutzerkonto oder externes Backend.',
         },
     },
 ]
