@@ -125,9 +125,9 @@ export const projects = [
     },
      {
         title: 'Demo Manager',
-        category: 'Fullstack Web App',
+        category: 'Web App',
         description:
-            'Ein Online-Shop für Comics mit einer Microservice-Architektur und asynchroner Kommunikation.',
+            'Ein persönliches Dashboard zur Planung und Auswertung von Vertriebsdemos. Die Anwendung bündelt Termine, Status und Quartalsziele und berücksichtigt Urlaub und Krankheit bei der Zielberechnung.',
         stack: ['Java', 'Spring Boot', 'React', 'RabbitMQ', 'Docker', 'Microservices'],
         details: {
             problem:
