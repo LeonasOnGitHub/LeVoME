@@ -21,7 +21,7 @@ export const profile = {
 export const projects = [
     {
         title: 'Daily Challenge App',
-        category: 'Fullstack Web App',
+        category: 'Web App',
         description:
             'Eine Anwendung mit täglichen Challenges, Nutzerverwaltung, Sicherheitsfunktionen und Leaderboards.',
         stack: ['Java', 'Spring Boot', 'React', 'JavaScript', 'PostgreSQL'],
