@@ -131,9 +131,9 @@ export const projects = [
         stack: ['React', 'Vite', 'PowerShell', 'TypeScript'],
         details: {
             problem:
-                'Die Verwaltung von Vertriebsdemos in Excel erforderte manuelle Pflege und aufwendige Berechnungen. Durchgeführte Termine, geplante Demos und Abwesenheitsgutschriften mussten nachvollziehbar getrennt werden, um den tatsächlichen Quartalsfortschritt zuverlässig abzubilden.',
+                'Die Verwaltung von Vertriebsdemos in Excel erforderte manuelle Pflege und aufwendige Berechnungen. Durchgeführte Termine, geplante Demos und Abwesenheitsgutschriften sollen nachvollziehbar getrennt werden, um den tatsächlichen Quartalsfortschritt zuverlässig abzubilden.',
             contribution:
-                'Konzeption und Umsetzung einer auf den persönlichen Vertriebsalltag zugeschnittenen Anwendung – von der Dashboard-Gestaltung über die Berechnungslogik bis zur Übernahme bestehender Excel-Daten.',
+                'Konzeption und Umsetzung einer auf den persönlichen Vertriebsalltag zugeschnittenen Anwendung. Ich habe alles, von der Dashboard-Gestaltung über die Berechnungslogik bis zur Übernahme bestehender Excel-Daten, eigenständig umgesetzt.',
             implementation:
                 'Entwicklung einer responsiven React-Anwendung mit Demo-Verwaltung, Suche, Statusfiltern und Abwesenheitserfassung. Die Zielberechnung berücksichtigt historische Quartalswerte und macht fehlende Berechnungsgrundlagen sichtbar. Daten werden lokal im Browser gespeichert und können über JSON-Backups gesichert und wiederhergestellt werden. Ein Windows-Desktop-Starter öffnet die Anwendung in einem eigenen Chrome-Fenster.',
             outcome:
