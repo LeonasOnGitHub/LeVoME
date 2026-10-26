@@ -135,9 +135,9 @@ export const projects = [
             contribution:
                 'Konzeption und Umsetzung einer auf den persönlichen Vertriebsalltag zugeschnittenen Anwendung. Ich habe alles, von der Dashboard-Gestaltung über die Berechnungslogik bis zur Übernahme bestehender Excel-Daten, eigenständig umgesetzt.',
             implementation:
-                'Entwicklung einer responsiven React-Anwendung mit Demo-Verwaltung, Suche, Statusfiltern und Abwesenheitserfassung. Die Zielberechnung berücksichtigt historische Quartalswerte und macht fehlende Berechnungsgrundlagen sichtbar. Daten werden lokal im Browser gespeichert und können über JSON-Backups gesichert und wiederhergestellt werden. Ein Windows-Desktop-Starter öffnet die Anwendung in einem eigenen Chrome-Fenster.',
+                'Entwicklung einer responsiven React-Anwendung mit Demo-Verwaltung, Suche, Filtern und Abwesenheitserfassung. Daten werden lokal im Browser gespeichert und können über JSON-Backups gesichert und wiederhergestellt werden. Ein Windows-Desktop-Starter öffnet die Anwendung in einem eigenen Chrome-Fenster.',
             outcome:
-                'Eine zentrale Übersicht über bestätigte Ergebnisse, geplante Termine und den Fortschritt zum Quartalsziel. Automatisierte Berechnungen reduzieren manuelle Rechenschritte und machen die Anrechnung von Abwesenheiten nachvollziehbar. Die Anwendung funktioniert ohne Benutzerkonto oder externes Backend.',
+                'Eine zentrale Übersicht über bestätigte und geplante Termine, sowie den Fortschritt zum Quartalsziel. Automatisierte Berechnungen reduzieren manuelle Rechenschritte und machen die Anrechnung von Abwesenheiten nachvollziehbar. Die Anwendung funktioniert ohne Benutzerkonto oder externes Backend.',
         },
     },
 ]
