@@ -138,6 +138,8 @@ export const projects = [
                 'Entwicklung einer responsiven React-Anwendung mit Demo-Verwaltung, Suche, Filtern und Abwesenheitserfassung. Daten werden lokal im Browser gespeichert und können über JSON-Backups gesichert und wiederhergestellt werden. Ein Windows-Desktop-Starter öffnet die Anwendung in einem eigenen Chrome-Fenster.',
             outcome:
                 'Eine zentrale Übersicht über bestätigte und geplante Termine, sowie den Fortschritt zum Quartalsziel. Automatisierte Berechnungen reduzieren manuelle Rechenschritte und machen die Anrechnung von Abwesenheiten nachvollziehbar. Die Anwendung funktioniert ohne Benutzerkonto oder externes Backend.',
+            githubUrl:
+                'https://github.com/LeonasOnGitHub/Demo-Manager',
             screenshots: [
                 {
                     src: 'S1DM.png',
