@@ -141,15 +141,15 @@ export const projects = [
             screenshots: [
                 {
                     src: 'S1DM.png',
-                    alt: 'Screenshot der Demo Manager Anwendung',
+                    alt: 'Screenshot Demo Dashboard',
                 },
                 {
                     src: 'S2DM.png',
-                    alt: 'Komponentendiagram'
+                    alt: 'Screenshot Neue Demo hinzufügen',
                 },
                 {
                     src: 'S3DM.png',
-                    alt: 'Komponentendiagram'
+                    alt: 'Screenshot Abwesenheit Dashboard',
                 },
             ],
         },
