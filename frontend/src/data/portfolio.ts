@@ -98,8 +98,8 @@ export const projects = [
                     alt: 'Screenshot der News Analyse Tool Anwendung',
                 },
                 {
-                    src: 'NewsAnalyseKomponetendiagram.png',
-                    alt: 'Komponentendiagram'
+                    src: 'NewsAnalyse-Komponentendiagramm.png',
+                    alt: 'Komponentendiagramm'
                 },
             ],
         },
