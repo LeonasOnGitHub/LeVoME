@@ -123,7 +123,7 @@ export const projects = [
                 'https://github.com/LeonasOnGitHub/LookUP',
         },
     },
-     {
+    {
         title: 'Demo Manager',
         category: 'Web App',
         description:
@@ -138,6 +138,20 @@ export const projects = [
                 'Entwicklung einer responsiven React-Anwendung mit Demo-Verwaltung, Suche, Filtern und Abwesenheitserfassung. Daten werden lokal im Browser gespeichert und können über JSON-Backups gesichert und wiederhergestellt werden. Ein Windows-Desktop-Starter öffnet die Anwendung in einem eigenen Chrome-Fenster.',
             outcome:
                 'Eine zentrale Übersicht über bestätigte und geplante Termine, sowie den Fortschritt zum Quartalsziel. Automatisierte Berechnungen reduzieren manuelle Rechenschritte und machen die Anrechnung von Abwesenheiten nachvollziehbar. Die Anwendung funktioniert ohne Benutzerkonto oder externes Backend.',
+            screenshots: [
+                {
+                    src: 'S1DM.png',
+                    alt: 'Screenshot der Demo Manager Anwendung',
+                },
+                {
+                    src: 'S2DM.png',
+                    alt: 'Komponentendiagram'
+                },
+                {
+                    src: 'S3DM.png',
+                    alt: 'Komponentendiagram'
+                },
+            ],
         },
     },
 ]
