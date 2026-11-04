@@ -153,6 +153,10 @@ export const projects = [
                     src: 'S3DM.png',
                     alt: 'Screenshot Abwesenheit Dashboard',
                 },
+                 {
+                    src: 'S4DM.png',
+                    alt: 'Screenshot Abwesenheit Dashboard',
+                },
             ],
         },
     },
