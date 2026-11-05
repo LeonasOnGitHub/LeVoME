@@ -9,6 +9,7 @@ function ArrowIcon() {
 
 export default function App() {
   const [openProject, setOpenProject] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
   const selectedProject = projects.find(
     (project) => project.title === openProject,
   )
@@ -20,19 +21,30 @@ export default function App() {
       })
     }
   }, [openProject])
+  
+  useEffect(() => {
+    const handleScroll = () => {
+        setScrolled(window.scrollY > 20);
+    };
 
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+        window.removeEventListener("scroll", handleScroll);
+    };
+}, []);
   return (
     <>
       <a className="skip-link" href="#content">Zum Inhalt springen</a>
-      <header className="site-header">
-
-        <nav aria-label="Hauptnavigation">
-          <a href="#about">Über mich</a>
-          <a href="#projects">Projekte</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Kontakt</a>
-        </nav>
-      </header>
+     <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
+    <nav aria-label="Hauptnavigation">
+        <a href="#about">Über mich</a>
+        <a href="#projects">Projekte</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+</header>
 
       <main id="content">
         <section className="hero section" id="home">
