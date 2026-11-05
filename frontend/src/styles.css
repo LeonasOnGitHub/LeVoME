@@ -64,8 +64,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    z-index: 1;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: var(--bg);
 }
 
 .brand {
