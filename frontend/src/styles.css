@@ -60,7 +60,7 @@ footer {
 }
 
 .site-header {
-    height: 5.5rem;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,11 +91,14 @@ footer {
 }
 
 nav {
-  display: flex;
-  justify-content: center; /* Elemente horizontal zentrieren */
-  align-items: center;     /* Elemente vertikal zentrieren */
-  gap: 5rem;                /* Abstand zwischen den Links */
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Elemente horizontal zentrieren */
+    align-items: center;
+    /* Elemente vertikal zentrieren */
+    gap: 5rem;
+    /* Abstand zwischen den Links */
+    width: 100%;
 }
 
 nav a {
@@ -587,6 +590,10 @@ footer {
     main,
     footer {
         width: min(100% - 2rem, 1120px)
+    }
+
+    .site-header {
+        height: 3rem;
     }
 
     nav {
