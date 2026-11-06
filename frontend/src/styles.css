@@ -74,7 +74,7 @@ footer {
 }
 
 .site-header.scrolled {
-    background: rgba(15, 15, 15, 0.75);
+    background: rgba(15, 15, 15, 0.5);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
@@ -102,7 +102,7 @@ nav {
 }
 
 nav a {
-    font-size: .86rem;
+    font-size: 1rem;
     color: var(--muted);
 }
 
