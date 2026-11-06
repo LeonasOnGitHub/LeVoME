@@ -593,15 +593,15 @@ footer {
     }
 
     .site-header {
-        height: 3rem;
+        height: 2.5rem;
     }
 
     nav {
-        gap: .8rem
+        gap: 2rem
     }
 
     nav a {
-        font-size: .75rem
+        font-size: .9rem
     }
 
     .section {
