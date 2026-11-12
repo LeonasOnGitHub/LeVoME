@@ -39,6 +39,10 @@ export default function App() {
         window.removeEventListener("scroll", handleScroll);
     };
 }, []);
+  const previousOverflow = document.body.style.overflow;
+
+  document.body.style.overflow = "hidden";
+  
   return (
     <>
       <a className="skip-link" href="#content">Zum Inhalt springen</a>
