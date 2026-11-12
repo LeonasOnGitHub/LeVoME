@@ -48,8 +48,13 @@ export default function App() {
       setActiveScreenshot(null);
     }
   };
-
   window.addEventListener("keydown", handleKeyDown);
+
+   return () => {
+    document.body.style.overflow = previousOverflow;
+    window.removeEventListener("keydown", handleKeyDown);
+  };
+}, [activeScreenshot]);
   
   return (
     <>
