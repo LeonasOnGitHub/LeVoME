@@ -39,18 +39,26 @@ export default function App() {
         window.removeEventListener("scroll", handleScroll);
     };
 }, []);
+  useEffect(() => {
+  // Nur ausführen, wenn ein Screenshot geöffnet ist
+  if (!activeScreenshot) return;
+
   const previousOverflow = document.body.style.overflow;
 
+  // Scrollen im Hintergrund deaktivieren
   document.body.style.overflow = "hidden";
 
+  // Escape-Taste zum Schließen
   const handleKeyDown = (event: KeyboardEvent) => {
     if (event.key === "Escape") {
       setActiveScreenshot(null);
     }
   };
+
   window.addEventListener("keydown", handleKeyDown);
 
-   return () => {
+  // Beim Schließen der Lightbox
+  return () => {
     document.body.style.overflow = previousOverflow;
     window.removeEventListener("keydown", handleKeyDown);
   };
