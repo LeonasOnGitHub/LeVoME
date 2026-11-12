@@ -42,6 +42,14 @@ export default function App() {
   const previousOverflow = document.body.style.overflow;
 
   document.body.style.overflow = "hidden";
+
+  const handleKeyDown = (event: KeyboardEvent) => {
+    if (event.key === "Escape") {
+      setActiveScreenshot(null);
+    }
+  };
+
+  window.addEventListener("keydown", handleKeyDown);
   
   return (
     <>
