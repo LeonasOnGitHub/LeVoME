@@ -851,3 +851,28 @@ footer {
         right: 1rem;
     }
 }
+
+.maintenance-notice {
+    background: rgba(245, 196, 94, 0.10);
+    border: 1px solid rgba(245, 196, 94, 0.3);
+    border-radius: 14px;
+    padding: 14px;
+    margin: 12px;
+    color: #f4f7fb;
+}
+
+.maintenance-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #f5c45e;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.maintenance-notice p {
+    color: #c7cbd3;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin: 8px 0 0;
+}
