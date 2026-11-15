@@ -1,6 +1,6 @@
 import { profile, projects, skillGroups } from "./data/portfolio";
 import { useState, useEffect } from "react";
-import { Construction } from "lucide-react";
+import { createPortal } from "react-dom";import { Construction } from "lucide-react";
 
 
 function ArrowIcon() {
@@ -13,6 +13,11 @@ export default function App() {
   const selectedProject = projects.find(
     (project) => project.title === openProject,
   )
+  const [activeScreenshot, setActiveScreenshot] = useState<{
+  src: string;
+  alt: string;
+} | null>(null);
+  
   useEffect(() => {
     if (openProject) {
       document.getElementById('project-details')?.scrollIntoView({
@@ -33,7 +38,32 @@ export default function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+}, []);
+  useEffect(() => {
+  // Nur ausführen, wenn ein Screenshot geöffnet ist
+  if (!activeScreenshot) return;
+
+  const previousOverflow = document.body.style.overflow;
+
+  // Scrollen im Hintergrund deaktivieren
+  document.body.style.overflow = "hidden";
+
+  // Escape-Taste zum Schließen
+  const handleKeyDown = (event: KeyboardEvent) => {
+    if (event.key === "Escape") {
+      setActiveScreenshot(null);
+    }
+  };
+
+  window.addEventListener("keydown", handleKeyDown);
+
+  // Beim Schließen der Lightbox
+  return () => {
+    document.body.style.overflow = previousOverflow;
+    window.removeEventListener("keydown", handleKeyDown);
+  };
+}, [activeScreenshot]);
+  
   return (
     <>
       <a className="skip-link" href="#content">Zum Inhalt springen</a>
@@ -173,19 +203,26 @@ export default function App() {
                         GitHub <ArrowIcon />
                       </a>
                     )}
-                    {selectedProject.details.screenshots?.length && (
-                      <div className="screenshot-gallery">
-                        {selectedProject.details.screenshots.map((screenshot) => (
-                          <figure key={screenshot.src}>
-                            <img
-                              src={screenshot.src}
-                              alt={screenshot.alt}
-                              loading="lazy"
-                            />
-                          </figure>
-                        ))}
-                      </div>
-                    )}
+                   {selectedProject.details.screenshots?.length && (
+  <div className="screenshot-gallery">
+    {selectedProject.details.screenshots.map((screenshot) => (
+      <figure key={screenshot.src}>
+        <button
+          type="button"
+          className="screenshot-trigger"
+          onClick={() => setActiveScreenshot(screenshot)}
+          aria-label={`Screenshot vergrößern: ${screenshot.alt}`}
+        >
+          <img
+            src={screenshot.src}
+            alt={screenshot.alt}
+            loading="lazy"
+          />
+        </button>
+      </figure>
+    ))}
+  </div>
+)}
                     <div className="resource-links">
                       {selectedProject.details.liveUrl && (
                         <a>
@@ -246,6 +283,41 @@ export default function App() {
       <footer>
         <span>© 2026 {profile.name}. Alle Rechte vorbehalten.</span>
       </footer>
+      
+      {activeScreenshot &&
+  createPortal(
+    <div
+      className="screenshot-lightbox"
+      onClick={(event) => {
+        if (event.target === event.currentTarget) {
+          setActiveScreenshot(null);
+        }
+      }}
+    >
+      <div
+        className="lightbox-content"
+        role="dialog"
+        aria-modal="true"
+        aria-label={activeScreenshot.alt}
+      >
+        <button
+          type="button"
+          className="lightbox-close"
+          onClick={() => setActiveScreenshot(null)}
+          aria-label="Großansicht schließen"
+          autoFocus
+        >
+          ×
+        </button>
+
+        <img
+          src={activeScreenshot.src}
+          alt={activeScreenshot.alt}
+        />
+      </div>
+    </div>,
+    document.body
+  )}
     </>
   )
 }
