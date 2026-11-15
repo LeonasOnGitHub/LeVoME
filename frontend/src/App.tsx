@@ -1,6 +1,6 @@
 import { profile, projects, skillGroups } from "./data/portfolio";
 import { useState, useEffect } from "react";
-
+import { Construction } from "lucide-react";
 
 
 function ArrowIcon() {
@@ -21,30 +21,30 @@ export default function App() {
       })
     }
   }, [openProject])
-  
+
   useEffect(() => {
     const handleScroll = () => {
-        setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
 
     return () => {
-        window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-}, []);
+  }, []);
   return (
     <>
       <a className="skip-link" href="#content">Zum Inhalt springen</a>
-     <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
-    <nav aria-label="Hauptnavigation">
-        <a href="#about">Über mich</a>
-        <a href="#projects">Projekte</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Kontakt</a>
-    </nav>
-</header>
+      <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
+        <nav aria-label="Hauptnavigation">
+          <a href="#about">Über mich</a>
+          <a href="#projects">Projekte</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+      </header>
 
       <main id="content">
         <section className="hero section" id="home">
@@ -191,6 +191,17 @@ export default function App() {
                         <a>
                           <div className="phone">
                             <div className="notch"></div>
+                            <div className="maintenance-notice">
+                              <div className="maintenance-title">
+                                <Construction size={18} />
+                                <span>Under Construction</span>
+                              </div>
+
+                              <p>
+                                Daylenge wird aktuell technisch überarbeitet.
+                                Einige Funktionen sind vorübergehend nicht verfügbar.
+                              </p>
+                            </div>
                             <iframe src={selectedProject.details.liveUrl} title="Meine App"
                               allow="clipboard-write; geolocation" scrolling="no"></iframe>
                           </div>
