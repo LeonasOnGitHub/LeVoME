@@ -112,7 +112,7 @@ export default function App() {
 
           <div className="about-photo">
             <img
-              src="m1.jpeg"
+              src="JobPic.jpg"
               alt="Porträt von Leonas Freiherr von Medem"
             />
           </div>
