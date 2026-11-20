@@ -80,7 +80,7 @@ export default function App() {
       <main id="content">
         <section className="hero section" id="home">
           <p className="eyebrow reveal">{profile.role}</p>
-          <h1 className="reveal">Hi, ich bin Leonas</h1>
+          <h1 className="reveal">Herzlich willkommen, ich bin Leonas</h1>
           <p className="hero-copy reveal">{profile.intro}</p>
           <div className="actions reveal">
             <a className="button button-primary" href="#projects">Projekte ansehen <ArrowIcon /></a>
