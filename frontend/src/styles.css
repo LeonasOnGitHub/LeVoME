@@ -56,7 +56,7 @@ a {
 main,
 footer {
     width: min(1120px, calc(100% - 3rem));
-    
+    margin: auto;
 }
 
 .site-header {
